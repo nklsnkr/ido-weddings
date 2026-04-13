@@ -62,6 +62,9 @@
 
   <!-- Mobile Menu Overlay -->
   <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
     <div class="mobile-menu-inner">
       <nav class="mobile-nav">
         <a href="#home" class="mobile-link">Home</a>
@@ -196,64 +199,76 @@
         <h2 class="section-title reveal" data-delay="0.1">Bespoke Services<br/><em>Tailored to Your Story</em></h2>
       </div>
       <div class="services-grid">
-        <div class="service-card reveal" data-delay="0">
-          <div class="service-num">01</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1"/><path d="M22 44 V24 h8 v20 M34 44 V28 h8 v16" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 20 h24" stroke="currentColor" stroke-width="1"/></svg>
+        <div class="svc-card reveal" data-delay="0">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500&q=80" alt="Full wedding planning" loading="lazy" />
+            <div class="svc-badge">01</div>
           </div>
-          <h3>Full Wedding Planning</h3>
-          <p>From concept to celebration &mdash; venue scouting, vendor coordination, design, timelines, and seamless execution. You enjoy; we handle everything.</p>
-          <a href="#booking" class="service-link">Learn More <span>&rarr;</span></a>
+          <div class="svc-body">
+            <h3>Full Wedding Planning</h3>
+            <p>From concept to celebration &mdash; venue scouting, vendor coordination, design, timelines, and seamless execution.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
         </div>
 
-        <div class="service-card reveal" data-delay="0.1">
-          <div class="service-num">02</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1"/><path d="M24 40 Q32 20 40 40" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="28" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="svc-card reveal" data-delay="0.1">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=500&q=80" alt="Partial planning" loading="lazy" />
+            <div class="svc-badge">02</div>
           </div>
-          <h3>Partial Planning</h3>
-          <p>Already started? We step in to bring cohesion, vendor management, design direction, and day-of peace of mind to your vision.</p>
-          <a href="#booking" class="service-link">Learn More <span>&rarr;</span></a>
+          <div class="svc-body">
+            <h3>Partial Planning</h3>
+            <p>Already started? We step in to bring cohesion, vendor management, design direction, and day-of calm.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
         </div>
 
-        <div class="service-card reveal" data-delay="0.2">
-          <div class="service-num">03</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1"/><rect x="22" y="22" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M28 22 V18 M36 22 V18" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="svc-card reveal" data-delay="0.2">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&q=80" alt="Design and styling" loading="lazy" />
+            <div class="svc-badge">03</div>
           </div>
-          <h3>Design & Styling</h3>
-          <p>Stunning visual narratives through florals, lighting, textiles, installations, and curated tablescapes that tell your story beautifully.</p>
-          <a href="#booking" class="service-link">Learn More <span>&rarr;</span></a>
+          <div class="svc-body">
+            <h3>Design & Styling</h3>
+            <p>Stunning visual narratives through florals, lighting, textiles, and curated tablescapes that tell your story.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
         </div>
 
-        <div class="service-card reveal" data-delay="0.3">
-          <div class="service-num">04</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 36 L32 24 L44 36 M26 32 L32 26 L38 32" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="32" y1="36" x2="32" y2="46" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="svc-card reveal" data-delay="0.3">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500&q=80" alt="Destination wedding" loading="lazy" />
+            <div class="svc-badge">04</div>
           </div>
-          <h3>Destination Weddings</h3>
-          <p>Dream of saying &ldquo;I do&rdquo; somewhere magical? We curate destination celebrations across India and worldwide with local expertise.</p>
-          <a href="#booking" class="service-link">Learn More <span>&rarr;</span></a>
+          <div class="svc-body">
+            <h3>Destination Weddings</h3>
+            <p>Dream of saying &ldquo;I do&rdquo; somewhere magical? We curate celebrations across India and worldwide.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
         </div>
 
-        <div class="service-card reveal" data-delay="0.4">
-          <div class="service-num">05</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1"/><path d="M24 32 a8 8 0 1 1 16 0 a8 8 0 1 1 -16 0" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M32 24 v-4 M32 40 v4 M24 32 h-4 M40 32 h4" stroke="currentColor" stroke-width="1"/></svg>
+        <div class="svc-card reveal" data-delay="0.4">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=500&q=80" alt="Day of coordination" loading="lazy" />
+            <div class="svc-badge">05</div>
           </div>
-          <h3>Day-of Coordination</h3>
-          <p>Relax and be present on your big day while we orchestrate every moving piece, manage vendors, and ensure flawless execution.</p>
-          <a href="#booking" class="service-link">Learn More <span>&rarr;</span></a>
+          <div class="svc-body">
+            <h3>Day-of Coordination</h3>
+            <p>Relax and be present on your big day while we orchestrate every detail and ensure flawless execution.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
         </div>
 
-        <div class="service-card reveal" data-delay="0.5">
-          <div class="service-num">06</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1"/><path d="M24 26 Q32 18 40 26 Q40 34 32 42 Q24 34 24 26Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="svc-card reveal" data-delay="0.5">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=500&q=80" alt="Special occasions" loading="lazy" />
+            <div class="svc-badge">06</div>
           </div>
-          <h3>Special Occasions</h3>
-          <p>Engagements, mehendi, sangeet, haldi, anniversaries, milestone birthdays &mdash; we make every celebration extraordinary and memorable.</p>
-          <a href="#booking" class="service-link">Learn More <span>&rarr;</span></a>
+          <div class="svc-body">
+            <h3>Special Occasions</h3>
+            <p>Engagements, mehendi, sangeet, haldi, anniversaries &mdash; we make every celebration extraordinary.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
         </div>
       </div>
     </div>
