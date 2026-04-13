@@ -675,8 +675,8 @@ input, select, textarea { font-family: inherit; }
    ================================================================ */
 .booking-section { background: var(--warm); }
 .booking-layout {
-  display: grid; grid-template-columns: 1fr 1.1fr;
-  gap: 64px; align-items: start;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 48px; align-items: start;
 }
 .booking-desc { font-size: 0.95rem; color: var(--text-light); margin: 16px 0 32px; line-height: 1.8; }
 
@@ -704,7 +704,7 @@ input, select, textarea { font-family: inherit; }
 
 /* Booking Form */
 .booking-form {
-  background: var(--cream); padding: 48px;
+  background: var(--cream); padding: 40px 36px;
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: var(--radius); box-shadow: var(--shadow-md);
 }
