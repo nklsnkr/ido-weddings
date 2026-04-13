@@ -861,8 +861,8 @@ input, select, textarea { font-family: inherit; }
   .logo-tagline { font-size: 0.45rem; letter-spacing: 2px; }
   .about-layout { grid-template-columns: 1fr; gap: 60px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-  .portfolio-item { height: 300px; }
+  .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+  .portfolio-item { height: 280px; }
   .booking-layout { grid-template-columns: 1fr; gap: 48px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -881,8 +881,8 @@ input, select, textarea { font-family: inherit; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; }
   .services-grid { grid-template-columns: 1fr; }
-  .portfolio-grid { grid-template-columns: 1fr; }
-  .portfolio-item { height: 260px; }
+  .portfolio-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .portfolio-item { height: 160px; }
   .about-stats { gap: 24px; }
   .stat-num { font-size: 1.6rem; }
   .form-grid { grid-template-columns: 1fr; }
