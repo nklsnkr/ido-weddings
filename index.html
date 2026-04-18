@@ -339,33 +339,25 @@
       .half-title { font-size: clamp(40px, 8vw, 64px); }
     }
 
-    /* Mobile — stacked */
+    /* Mobile — stacked, equally divided */
     @media (max-width: 720px) {
       html, body { overflow: auto; height: auto; min-height: 100%; }
       .landing {
         flex-direction: column;
         height: auto;
         min-height: 100vh;
+        padding-top: 130px; /* reserved space for the brand mark */
       }
       .half {
-        flex: 0 0 auto !important;
+        flex: 1 1 0 !important;
         width: 100%;
-        min-height: 58vh;
-        padding: 40px 28px;
+        min-height: calc((100vh - 130px) / 2);
+        padding: 48px 28px;
+        display: flex;
       }
-      .half-weddings { padding-top: 210px; padding-bottom: 60px; }
-      .half-corporate { padding-top: 80px; padding-bottom: 60px; }
-      .landing:hover .half { flex: 0 0 auto; }
-      .landing:hover .half:hover { flex: 0 0 auto; }
-      .divider {
-        top: auto;
-        bottom: 50vh;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        transform: none;
-        display: none;
-      }
+      .landing:hover .half { flex: 1 1 0; }
+      .landing:hover .half:hover { flex: 1 1 0; }
+      .divider { display: none; }
       .brand {
         position: absolute;
         top: 30px;
@@ -385,9 +377,11 @@
         padding: 24px;
         background: #0b0d10;
       }
-      .half-sub { font-size: 14px; margin-bottom: 28px; }
-      .half-enter { padding: 14px 26px; }
-      /* Between-halves ampersand divider */
+      .half-title { font-size: clamp(36px, 10vw, 54px); }
+      .half-sub { font-size: 14px; margin-bottom: 26px; padding: 0 8px; }
+      .half-enter { padding: 13px 24px; letter-spacing: 0.35em; }
+      .half-kicker { margin-bottom: 18px; font-size: 10px; letter-spacing: 0.45em; }
+      /* & medallion between halves */
       .half-corporate { position: relative; }
       .half-corporate::before {
         content: '&';
@@ -409,13 +403,17 @@
         align-items: center;
         justify-content: center;
       }
-    }
-
-    @media (max-width: 720px) {
+      /* Neutralize hover-only transforms on touch */
       .half:hover .half-enter {
-        letter-spacing: 0.4em;
-        padding: 14px 26px;
+        letter-spacing: 0.35em;
+        padding: 13px 24px;
+        background: rgba(255,255,255,0.05);
+        color: #fff;
+        border-color: rgba(255,255,255,0.7);
       }
+      .half:hover .half-enter .arrow { background: #fff; width: 24px; }
+      .half:hover .half-enter .arrow::after { border-color: #fff; }
+      .half:hover .content { transform: none; }
     }
   </style>
 </head>
