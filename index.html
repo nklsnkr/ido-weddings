@@ -341,7 +341,7 @@
 
     /* Mobile — stacked */
     @media (max-width: 720px) {
-      html, body { overflow: auto; }
+      html, body { overflow: auto; height: auto; min-height: 100%; }
       .landing {
         flex-direction: column;
         height: auto;
@@ -367,6 +367,7 @@
         display: none;
       }
       .brand {
+        position: absolute;
         top: 30px;
         left: 0;
         right: 0;
