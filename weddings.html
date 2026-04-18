@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Do! Weddings & Occasions</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text x='4' y='26' font-size='26'>💍</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span class="preloader-text">I Do!</span>
+    </div>
+  </div>
+
+  <!-- Cursor follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="I Do! Weddings home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 50 50" width="44" height="44">
+            <circle cx="25" cy="25" r="23" fill="none" stroke="#b5a389" stroke-width="0.8"/>
+            <text x="25" y="22" text-anchor="middle" font-family="Playfair Display, serif" font-size="14" font-weight="600" font-style="italic" fill="#b5a389">I Do</text>
+            <text x="25" y="32" text-anchor="middle" font-family="Playfair Display, serif" font-size="7" fill="#b5a389">!</text>
+            <path d="M12 38 Q25 44 38 38" fill="none" stroke="#b5a389" stroke-width="0.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">I Do!</span>
+          <span class="logo-tagline">Weddings & Occasions</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#services" class="nav-link" data-section="services">Services</a>
+        <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
+        <a href="#process" class="nav-link" data-section="process">Process</a>
+        <a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="#booking" class="btn btn-header">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="mobile-menu-inner">
+      <nav class="mobile-nav">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#portfolio" class="mobile-link">Portfolio</a>
+        <a href="#process" class="mobile-link">Our Process</a>
+        <a href="#testimonials" class="mobile-link">Reviews</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#booking" class="mobile-link highlight">Book a Consultation</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <p>hello@idoweddings.com</p>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-slide active" data-index="0">
+        <div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1600&q=80')"></div>
+      </div>
+      <div class="hero-slide" data-index="1">
+        <div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&q=80')"></div>
+      </div>
+      <div class="hero-slide" data-index="2">
+        <div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1600&q=80')"></div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag" data-animate="fade-up" data-delay="0.3">
+        <span class="line"></span> Wedding Planning Studio
+      </div>
+      <h1 data-animate="fade-up" data-delay="0.5">
+        We Craft<br/>
+        <em>Timeless</em> Love Stories
+      </h1>
+      <p class="hero-sub" data-animate="fade-up" data-delay="0.7">Bespoke wedding planning for couples who believe in the beauty of details</p>
+      <div class="hero-actions" data-animate="fade-up" data-delay="0.9">
+        <a href="#booking" class="btn btn-primary">Book a Consultation</a>
+        <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-slider-nav">
+        <button class="slider-dot active" data-slide="0"><span>01</span></button>
+        <div class="slider-progress"><div class="slider-progress-bar" id="sliderProgress"></div></div>
+        <button class="slider-dot" data-slide="1"><span>02</span></button>
+        <div class="slider-progress"><div class="slider-progress-bar"></div></div>
+        <button class="slider-dot" data-slide="2"><span>03</span></button>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll to explore</span>
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Full Wedding Planning</span><span class="sep">&#10047;</span>
+      <span>Destination Weddings</span><span class="sep">&#10047;</span>
+      <span>Design & Decor</span><span class="sep">&#10047;</span>
+      <span>Day-of Coordination</span><span class="sep">&#10047;</span>
+      <span>Mehendi & Sangeet</span><span class="sep">&#10047;</span>
+      <span>Luxury Celebrations</span><span class="sep">&#10047;</span>
+      <span>Full Wedding Planning</span><span class="sep">&#10047;</span>
+      <span>Destination Weddings</span><span class="sep">&#10047;</span>
+      <span>Design & Decor</span><span class="sep">&#10047;</span>
+      <span>Day-of Coordination</span><span class="sep">&#10047;</span>
+      <span>Mehendi & Sangeet</span><span class="sep">&#10047;</span>
+      <span>Luxury Celebrations</span><span class="sep">&#10047;</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual">
+          <div class="about-img about-img-1 reveal">
+            <img src="https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=600&q=80" alt="Couple celebration" loading="lazy" />
+          </div>
+          <div class="about-img about-img-2 reveal" data-delay="0.2">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=500&q=80" alt="Wedding details" loading="lazy" />
+          </div>
+          <div class="about-badge reveal" data-delay="0.4">
+            <strong>7+</strong>
+            <span>Years of<br/>Love Stories</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label reveal">About Us</div>
+          <h2 class="section-title reveal" data-delay="0.1">You won't feel like a client.<br/><em>You'll feel like family.</em></h2>
+          <div class="about-body reveal" data-delay="0.2">
+            <p>At <strong>I Do! Weddings & Occasions</strong>, we believe every love story deserves a celebration as unique as the couple themselves. Founded with a deep passion for beauty, culture, and authentic connections, we pour our hearts into every event we craft.</p>
+            <p>Whether you envision a grand traditional affair, an intimate garden ceremony, or a vibrant multi-day destination celebration &mdash; we walk beside you at every step, transforming your dreams into breathtaking, unforgettable realities.</p>
+          </div>
+          <div class="about-stats reveal" data-delay="0.3">
+            <div class="stat">
+              <span class="stat-num" data-count="150">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Weddings Planned</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Cities Covered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Vendor Partners</span>
+            </div>
+          </div>
+          <a href="#booking" class="btn btn-secondary reveal" data-delay="0.4">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">What We Do</div>
+        <h2 class="section-title reveal" data-delay="0.1">Bespoke Services<br/><em>Tailored to Your Story</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal" data-delay="0">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500&q=80" alt="Full wedding planning" loading="lazy" />
+            <div class="svc-badge">01</div>
+          </div>
+          <div class="svc-body">
+            <h3>Full Wedding Planning</h3>
+            <p>From concept to celebration &mdash; venue scouting, vendor coordination, design, timelines, and seamless execution.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal" data-delay="0.1">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=500&q=80" alt="Partial planning" loading="lazy" />
+            <div class="svc-badge">02</div>
+          </div>
+          <div class="svc-body">
+            <h3>Partial Planning</h3>
+            <p>Already started? We step in to bring cohesion, vendor management, design direction, and day-of calm.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal" data-delay="0.2">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&q=80" alt="Design and styling" loading="lazy" />
+            <div class="svc-badge">03</div>
+          </div>
+          <div class="svc-body">
+            <h3>Design & Styling</h3>
+            <p>Stunning visual narratives through florals, lighting, textiles, and curated tablescapes that tell your story.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal" data-delay="0.3">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500&q=80" alt="Destination wedding" loading="lazy" />
+            <div class="svc-badge">04</div>
+          </div>
+          <div class="svc-body">
+            <h3>Destination Weddings</h3>
+            <p>Dream of saying &ldquo;I do&rdquo; somewhere magical? We curate celebrations across India and worldwide.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal" data-delay="0.4">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=500&q=80" alt="Day of coordination" loading="lazy" />
+            <div class="svc-badge">05</div>
+          </div>
+          <div class="svc-body">
+            <h3>Day-of Coordination</h3>
+            <p>Relax and be present on your big day while we orchestrate every detail and ensure flawless execution.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal" data-delay="0.5">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=500&q=80" alt="Special occasions" loading="lazy" />
+            <div class="svc-badge">06</div>
+          </div>
+          <div class="svc-body">
+            <h3>Special Occasions</h3>
+            <p>Engagements, mehendi, sangeet, haldi, anniversaries &mdash; we make every celebration extraordinary.</p>
+            <a href="#booking" class="service-link">Enquire Now <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">Our Work</div>
+        <h2 class="section-title reveal" data-delay="0.1">Love Stories<br/><em>We've Brought to Life</em></h2>
+      </div>
+
+      <div class="portfolio-filter reveal" data-delay="0.2">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Weddings</button>
+        <button class="filter-btn" data-filter="destination">Destination</button>
+        <button class="filter-btn" data-filter="decor">Decor</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal" data-category="wedding" data-delay="0">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80" alt="Priya & Arjun's Wedding" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Wedding</span>
+            <h4>Priya & Arjun</h4>
+            <p>A royal celebration in the heart of Rajasthan</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="destination" data-delay="0.1">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80" alt="Beach wedding" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Destination</span>
+            <h4>Meera & Karthik</h4>
+            <p>Sunset ceremony on the shores of Goa</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="decor" data-delay="0.2">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=600&q=80" alt="Luxury reception" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Decor</span>
+            <h4>Golden Hour</h4>
+            <p>Luxury reception design with warm metallics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BIG QUOTE ============ -->
+  <section class="big-quote">
+    <div class="big-quote-bg" style="background-image:url('https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1600&q=80')"></div>
+    <div class="big-quote-overlay"></div>
+    <div class="big-quote-content reveal">
+      <div class="quote-mark">&ldquo;</div>
+      <blockquote>The best thing to hold onto in life is each other.</blockquote>
+      <cite>&mdash; Audrey Hepburn</cite>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">How It Works</div>
+        <h2 class="section-title reveal" data-delay="0.1">Our Planning<br/><em>Process</em></h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step reveal" data-delay="0">
+          <div class="step-marker"><span>1</span></div>
+          <div class="step-content">
+            <h3>Discovery Call</h3>
+            <p>We start with a complimentary call to understand your vision, style, budget, and everything that makes your love story unique.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" data-delay="0.15">
+          <div class="step-marker"><span>2</span></div>
+          <div class="step-content">
+            <h3>Proposal & Vision Board</h3>
+            <p>We craft a tailored proposal with mood boards, curated vendor suggestions, and a detailed plan aligned with your dreams.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" data-delay="0.3">
+          <div class="step-marker"><span>3</span></div>
+          <div class="step-content">
+            <h3>Planning & Design</h3>
+            <p>From venue walkthroughs to menu tastings, we manage every detail while keeping you inspired and stress-free throughout.</p>
+          </div>
+        </div>
+        <div class="process-step reveal" data-delay="0.45">
+          <div class="step-marker"><span>4</span></div>
+          <div class="step-content">
+            <h3>The Perfect Day</h3>
+            <p>We execute flawlessly behind the scenes so you can be fully present, soaking in every magical moment of your celebration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">Kind Words</div>
+        <h2 class="section-title reveal" data-delay="0.1">What Our Couples<br/><em>Say About Us</em></h2>
+      </div>
+      <div class="testimonials-carousel reveal" data-delay="0.2">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial active">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>&ldquo;They didn't just plan our wedding &mdash; they understood our story and wove it into every single moment. The decor, the flow, the emotions... it was beyond anything we imagined. Our families still talk about it.&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">P&A</div>
+              <div>
+                <strong>Priya & Arjun</strong>
+                <span>Udaipur, 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>&ldquo;From our very first call to the last dance, everything was absolutely seamless. We truly felt like family, not clients. The attention to detail was extraordinary. Pure magic from start to finish.&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M&K</div>
+              <div>
+                <strong>Meera & Karthik</strong>
+                <span>Bangalore, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>&ldquo;Every little detail was perfect. Our guests are still raving about the wedding, and it&rsquo;s been over a year! They made our dream come true and then some. We cannot recommend them enough.&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S&I</div>
+              <div>
+                <strong>Sara & Imran</strong>
+                <span>Goa, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="t-arrow t-prev" id="tPrev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M5 12l6-6M5 12l6 6"/></svg>
+          </button>
+          <div class="t-dots">
+            <button class="t-dot active" data-t="0"></button>
+            <button class="t-dot" data-t="1"></button>
+            <button class="t-dot" data-t="2"></button>
+          </div>
+          <button class="t-arrow t-next" id="tNext" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M19 12l-6-6M19 12l-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING / CONTACT ============ -->
+  <span id="contact"></span>
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="booking-layout">
+        <div class="booking-left">
+          <div class="section-label reveal">Let's Begin</div>
+          <h2 class="section-title reveal" data-delay="0.1">Ready to Plan<br/><em>Your Perfect Day?</em></h2>
+          <p class="booking-desc reveal" data-delay="0.2">Share your vision with us, and we'll craft a celebration that's uniquely yours. Fill out the form and we'll be in touch within 24 hours.</p>
+
+          <div class="contact-cards reveal" data-delay="0.3">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+              </div>
+              <div>
+                <strong>Email Us</strong>
+                <span>hello@idoweddings.com</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Call Us</strong>
+                <span>+91 98765 43210</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Visit Us</strong>
+                <span>Bangalore, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row reveal" data-delay="0.4">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 21l2-7.5M10 13.5a4 4 0 114-4"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="booking-right reveal" data-delay="0.2">
+          <form class="booking-form" id="bookingForm">
+            <h3>Book Your Free Consultation</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fname">Your Name *</label>
+                <input type="text" id="fname" name="fname" required placeholder="e.g. Priya" />
+              </div>
+              <div class="form-group">
+                <label for="pname">Partner's Name</label>
+                <input type="text" id="pname" name="pname" placeholder="e.g. Arjun" />
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210" />
+              </div>
+            </div>
+            <!-- Interactive Calendar -->
+            <div class="form-group">
+              <label>Preferred Consultation Date</label>
+              <div class="calendar-widget" id="calendarWidget">
+                <div class="cal-header">
+                  <button type="button" class="cal-nav" id="calPrev">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                  </button>
+                  <span class="cal-month" id="calMonth"></span>
+                  <button type="button" class="cal-nav" id="calNext">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                  </button>
+                </div>
+                <div class="cal-days-header">
+                  <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                </div>
+                <div class="cal-grid" id="calGrid"></div>
+                <input type="hidden" id="wdate" name="wdate" />
+                <div class="cal-selected" id="calSelected"></div>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="guests">Guest Count</label>
+                <select id="guests" name="guests">
+                  <option value="">Select range</option>
+                  <option>Under 50</option>
+                  <option>50 - 150</option>
+                  <option>150 - 300</option>
+                  <option>300 - 500</option>
+                  <option>500+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="timeslot">Preferred Time</label>
+                <select id="timeslot" name="timeslot">
+                  <option value="">Select a time</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:00 PM</option>
+                  <option>4:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Full Wedding Planning</option>
+                <option>Partial Planning</option>
+                <option>Design & Styling</option>
+                <option>Destination Wedding</option>
+                <option>Day-of Coordination</option>
+                <option>Special Occasion</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Dream Day</label>
+              <textarea id="message" name="message" rows="4" placeholder="Share your vision, venue preferences, theme ideas, budget range, or anything else..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Inquiry</span>
+              <span class="btn-loader" style="display:none">Sending...</span>
+            </button>
+            <p class="form-note">We respond within 24 hours. Your information is kept confidential.</p>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">
+              <svg viewBox="0 0 64 64" width="64" height="64"><circle cx="32" cy="32" r="28" fill="none" stroke="#9caa8b" stroke-width="2"/><path d="M20 32 l8 8 l16-16" stroke="#9caa8b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Thank You!</h3>
+            <p>We've received your inquiry and are so excited to learn more about your celebration. Expect to hear from us within 24 hours.</p>
+            <button class="btn btn-secondary" onclick="resetForm()">Send Another Inquiry</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo footer-logo-block">
+            <div class="logo-mark">
+              <svg viewBox="0 0 50 50" width="40" height="40">
+                <circle cx="25" cy="25" r="23" fill="none" stroke="#d4c5a9" stroke-width="0.8"/>
+                <text x="25" y="22" text-anchor="middle" font-family="Playfair Display, serif" font-size="14" font-weight="600" font-style="italic" fill="#d4c5a9">I Do</text>
+                <text x="25" y="32" text-anchor="middle" font-family="Playfair Display, serif" font-size="7" fill="#d4c5a9">!</text>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name" style="color:#d4c5a9">I Do!</span>
+              <span class="logo-tagline" style="color:rgba(255,255,255,0.5)">Weddings & Occasions</span>
+            </div>
+          </div>
+          <p>Crafting timeless celebrations and unforgettable love stories, one detail at a time.</p>
+          <div class="social-row footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 21l2-7.5M10 13.5a4 4 0 114-4"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#booking">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Full Planning</a>
+          <a href="#services">Partial Planning</a>
+          <a href="#services">Design & Styling</a>
+          <a href="#services">Destination Weddings</a>
+          <a href="#services">Day-of Coordination</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <a href="mailto:hello@idoweddings.com">hello@idoweddings.com</a>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+          <p style="margin-top:8px;color:rgba(255,255,255,0.5);font-size:0.85rem">Bangalore, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 I Do! Weddings & Occasions. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
